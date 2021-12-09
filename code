@@ -1,0 +1,21 @@
+borkos_moves = input().upper()
+
+ball_location = 1
+
+for moves in borkos_moves:
+    if moves == 'A' and ball_location == 1:
+        ball_location = 2
+    elif moves =='A' and ball_location == 2:
+        ball_location = 1
+    
+    elif moves == 'B' and ball_location == 2:
+        ball_location = 3
+    elif moves =='B' and ball_location == 3:
+        ball_location = 2
+        
+    elif moves == 'C' and ball_location == 1:
+        ball_location = 3
+    elif moves =='C' and ball_location == 3:
+        ball_location = 1
+        
+print(ball_location)
